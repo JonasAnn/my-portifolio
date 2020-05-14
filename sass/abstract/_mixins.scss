@@ -1,0 +1,25 @@
+@mixin flexRow {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin imageFit {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 31.25em) { @content };    // 500px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 50em) { @content };     // 800px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+}

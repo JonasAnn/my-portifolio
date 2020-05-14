@@ -1,0 +1,41 @@
+.footer{
+    text-align: center;
+    background-image: linear-gradient(225deg, $color-white 0%, $color-white 85%, $color-pink 85%);
+    position: relative;
+    @include respond(phone){
+        background-image: none;
+    }
+    &__socials--links{
+        &:link,
+        &:visited{
+        text-decoration: none;
+        display: inline-block;
+        font-size: 4.5rem;
+        transition: all .2s ease-in;
+        color: $color-pink;
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+    &:hover{
+        transform: scale(1.5);
+    }
+    }
+ 
+}
+.fa{
+    transition: all .2s;
+}
+.fa-github-square:hover{
+    color: $color-black;
+}
+
+.fa-linkedin-square:hover{
+    color: rgb(40,103,178);
+}
+.fa-twitter-square:hover{
+    color: rgb(29, 161, 242);
+} 
+.fa-facebook-official:hover{
+    color:rgb(66, 103, 178);
+}

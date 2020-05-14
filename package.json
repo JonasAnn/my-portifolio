@@ -1,0 +1,22 @@
+{
+  "name": "ifeoma-jonah",
+  "version": "1.0.0",
+  "description": "my portifolio website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasAnn/my-portifolio.git"
+  },
+  "author": "Ifeoma Jonah <ifyajoke@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasAnn/my-portifolio/issues"
+  },
+  "homepage": "https://github.com/JonasAnn/my-portifolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

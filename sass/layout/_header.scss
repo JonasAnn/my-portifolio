@@ -1,0 +1,39 @@
+.header{
+    position: relative;
+    background-image: linear-gradient(125deg, $color-white 0%, $color-white 75%, $color-pink 75%);
+    height: 80vh;
+    border-bottom: 3px solid $color-pink;
+    overflow: hidden;
+    @include respond(phone){
+      background-image: none;
+
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    width: 10rem;
+    height: 20rem;
+    background-image: linear-gradient(225deg, $color-white 0%, $color-white 75%, $color-pink 75%);
+    left: 0;
+  }
+  &__body{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  &__avatar{
+    width: 15%;
+    border-radius: 50%;
+    border: 4px outset $color-dark;
+    animation: zoomOut 1.5s ease;
+    backface-visibility: hidden;
+    @include respond(phone){
+      width: 40%;
+  }
+    .avatar{
+      @include imageFit;
+    }
+  }
+
+}
